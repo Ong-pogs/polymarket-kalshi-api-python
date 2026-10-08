@@ -16,6 +16,10 @@ search("kalshi", "Dan Sullivan")
 
 It is read-only. It never places an order and never asks for a wallet key or a venue login.
 
+![One market on two venues: four-hour closes from Polymarket and Kalshi](docs/history-chart.png)
+
+> A price difference between two venues is a place to look, not a trade. The API labels it `indicative price comparison`.
+
 ## Quick start
 
 You need Python 3.10 or newer and a Predictefy API key from [portal.predictefy.com/keys](https://portal.predictefy.com/keys). The free plan is enough for steps 1 to 6.
