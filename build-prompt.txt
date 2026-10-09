@@ -10,7 +10,7 @@ THE CLIENT
 - from predictefy import Predictefy; client = Predictefy(api_key=...). Venue clients share one method shape: client.polymarket, client.kalshi, or client.exchange("kalshi") when the venue is a variable. Cross-venue calls live on client.router.
 - List methods return a list with .page and .meta. Records are plain dictionaries.
 - Pass the client an httpx transport that reads the X-Credits-Charged response header, so every script can end with a line such as "credits used: 12   [fetchMarket 1 x2, fetchOrderBook 5 x2]".
-- The same transport supports PREDICTEFY_RECORD=<folder> (save every JSON response under <folder>/<script name and arguments>/, plus the time of the run) and PREDICTEFY_REPLAY=<folder> (answer from those files with no network and no key, freeze "now" to the recorded time, and print a first line "[replay] responses recorded <time> UTC, no API call made"). Do not record the streamed /v1/history/replay pages.
+- The same transport supports PREDICTEFY_RECORD=<folder> (save every JSON response under <folder>/<name of the script and its arguments>/, plus the time of the run) and PREDICTEFY_REPLAY=<folder> (answer from those files with no network and no key, freeze "now" to the recorded time, and print a first line "[replay] responses recorded <time> UTC, no API call made"). Do not record the streamed /v1/history/replay pages.
 - Build the client lazily so importing a step never needs a key, and let tests install their own transport.
 
 THE STEPS
