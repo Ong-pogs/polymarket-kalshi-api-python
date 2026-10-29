@@ -2,7 +2,7 @@
 
 Seven short scripts that read Polymarket and Kalshi with one Python package: prices, order books, the same market compared on both venues, price history, and a small backtest.
 
-Every call goes through the [Predictefy API](https://predictefy.com/en/api?utm_source=youtube&utm_medium=video&utm_campaign=polymarket-kalshi-api-python&utm_content=github), which returns the same fields for every venue. The point of the repository is that one function works on two venues without changes:
+Every call goes through the [Predictefy API](https://predictefy.com/en/prediction-market-api?utm_source=youtube&utm_medium=video&utm_campaign=polymarket-kalshi-api-python&utm_content=github), which returns the same fields for every venue. The point of the repository is that one function works on two venues without changes:
 
 ```python
 def search(venue, query, limit=3):
